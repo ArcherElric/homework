@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>frameWork</title>
+</head>
+    <!-- 其中FrameA-C,html的文件创建在同一个文件下，关键部分代码如下：
+        <title>Frame A</title>
+        <style>
+        *{
+             background-color: #8F8FBD;
+        }
+        </style>
+    <body>
+         <strong>Frame A</strong>
+    </body> -->
+    <frameset cols="10%,30%,10%,50%">
+        <frame noresize="noresize" src="FrameA.html">
+        <frame noresize="noresize" src="FrameB.html">
+        <frame noresize="noresize" src="FrameC.html">
+        <frameset rows="30%,50%,20%">
+            <frame noresize="noresize" src="FrameA.html">
+            <frame noresize="noresize" src="FrameB.html">
+            <frame noresize="noresize" src="FrameC.html">
+    </frameset>
+</html>

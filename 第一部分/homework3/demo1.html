@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .last-tr{
+            text-align: center;
+        }
+        table{
+            float: left;
+        }
+        div{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <form action="demo1.html" method="POST">
+        <table>
+            <tr>
+                <td>登录名:</td>
+                <td>
+                    <input type="text" name="name" id="">
+                    (可包含a-z、0-9和下划线)
+                </td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td>
+                    <input type="password" name="psw" id="">
+                    (至少包含6个字符)
+                </td>
+            </tr>
+            <tr>
+                <td>再次输入密码：</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>电子邮箱：</td>
+                <td>
+                    <input type="text">
+                    (必须包含@字符)
+                </td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type="checkbox" name="sex" id="" value="male">
+                    <img src="male.png" alt="">
+                    男
+                    <input type="checkbox" name="sex" id="" value="female">
+                    <img src="female.png" alt="">
+                    女
+                </td>
+            </tr>
+            <tr>
+                <td>头像：</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>爱好：</td>
+                <td>
+                    <input type="checkbox" name="hobby" id="" value="sport">运动
+                    <input type="checkbox" name="hobby" id="" value="chat">聊天
+                    <input type="checkbox" name="hobby" id="" value="game">玩游戏
+                </td>
+            </tr>
+            <tr>
+                <td>喜欢的城市：</td>
+                <td>
+                    <select name="city" id="">
+                        <option value="BJ">北京</option>
+                        <option value="SH">上海</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="last-tr">
+                <td colspan="2">
+                    <input type="button" value="同意服务条款，提交注册信息">
+                    <input type="reset" value="重填">
+                </td>
+            </tr>
+        </table>
+        <div>
+            <h2>
+                <img src="picture.png" alt="">阅读网服务协议
+            </h2>
+            <textarea name="protocol" id="" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo5</title>
+    <style>
+    body {
+        margin: auto;
+        padding: 10px;
+        width: 960px;
+    }
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    li {
+        list-style-type: none;
+    }
+    li a {
+        text-decoration: none;
+    }
+
+    /* 导航栏 */
+    .logo_nav {
+        position: relative;
+    }
+    .logo_nav ul {
+        height: 30px;
+        width: 250px;
+        position: absolute;
+        right: 0%;
+        bottom: 1%;
+        background-color: #EAFFFA;
+        border: 1px #D0EAE1 solid;
+    }
+    .logo_nav ul li {
+        text-align: center;
+        font-size: 12px;
+        padding: 7px 5px;
+        width: 20%;
+        float: left;
+    }
+    .logo_nav ul li a {
+        color: #77787A;
+    }
+    /* 导航栏图片 */
+    #discount {
+        position: absolute;
+        right: 200px;
+        bottom: 30px;
+        z-index: 2;
+    }
+    /* 主导航栏 */
+    .nav {
+        height: 36px;
+        background-color: #FD6B15;
+    }
+    .nav ul {
+        padding: 0px;
+    }
+    .nav ul li {
+        text-align: center;
+        font-size: 13px;
+        padding: 7px 4px;
+        width: 5%;
+        float: left;
+    }
+    .nav ul li a {
+        color: #ffffff;
+    }
+    .nav_bg {
+        margin: 10px 0px;
+    }
+
+    /* 主体内容栏 */
+    #mainbody {
+        height: 770px;
+    }
+    .left-body {
+        float: left;
+        width: 18%;
+    }
+    .left-body li {
+        font-size: 13px;
+        list-style-image: url(material/dot.jpg);
+        list-style-position: inside;
+        padding: 5px;
+        margin: 0 10px;
+    }
+    .left-body li a {
+        color: #77787A;
+    }
+    .right-body {
+        float: right;
+        width: 80%;
+        height: 100px;
+    }
+    .first {
+        margin: 0px 0px 10px 0px;
+        border: 1px #C68400 solid;
+        background-color: #FCF9EA;
+    }
+    .second {
+        border: 1px #C68400 solid;
+        background-color: #FCF9EA;
+    }
+    .left-body p {
+        height: 25px;
+        margin: 0px;
+        padding: 0px 14px;
+        color: #ffffff;
+        background-color: #D5AE22;
+        background-image: linear-gradient( to top, rgba(255, 145, 51, .5) 25%, rgba(206, 156, 25, .25) 75%, rgba(190, 132, 6, 0) 100%);    
+    }
+
+    /* 右侧主体内容栏 */
+    .right-body-title {
+        display: inline;
+        font-size: 18px;
+        color: #D07C00;
+    }
+    .right-body-hr {
+        margin: 6px 0px;
+        padding: 0px;
+        height: 1px;
+        background-image: url("material/navTitleBg.jpg");
+        background-repeat: repeat-x;
+    }
+
+    /* 右侧图片 */
+    .right-body>div {
+        clear: both;
+    }
+    .Sproduct>div {
+        float: left;
+        width: 20%;
+    }
+    .Sproduct>div>div {
+        position: relative;
+    }
+    .goodNum {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    .link {
+        font-size: 10px;
+    }
+    .Oprice {
+        margin: 0px;
+        font-size: 15px;
+        color: #cccccc;
+        text-decoration: line-through;
+    }
+    .newPrice {
+        margin: 0px;
+        font-size: 15px;
+        color: #CF080B;
+    }
+    #footer {
+        color: #cccccc;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="logo_nav">
+        <img src="material/logo.jpg" alt="当当网">
+        <img src="material/icon_count.png" alt="3折疯抢" id="discount">
+        <ul>
+            <li><a href="">尾品汇</a></li>
+            <li><a href="">当当优品</a></li>
+            <li><a href="">数字馆</a></li>
+            <li><a href="">都看阅读</a></li>
+        </ul>
+    </div>
+    <div class="nav">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">图书</a></li>
+                <li><a href="">音像</a></li>
+                <li><a href="">童装</a></li>
+                <li><a href="">服装</a></li>
+                <li><a href="">鞋靴</a></li>
+                <li><a href="">运动</a></li>
+                <li><a href="">箱包</a></li>
+                <li><a href="">美妆</a></li>
+                <li><a href="">珠宝</a></li>
+                <li><a href="">家具</a></li>
+                <li><a href="">食品</a></li>
+                <li><a href="">酒</a></li>
+                <li><a href="">手机</a></li>
+                <li><a href="">数码</a></li>
+                <li><a href="">电脑</a></li>
+                <li><a href="">家电</a></li>
+            </ul>
+    </div>
+    <div class="nav_bg">
+        <img src="material/banner.jpg" alt="logo">
+    </div>
+    <div id="mainbody">
+        <!-- 左侧导航栏 -->
+        <div class="left-body">
+            <div class="first">
+                <p>分类浏览</p>
+                <ul>
+                    <li><a href="">数码影音</a></li>
+                    <li><a href="">家具装饰</a></li>
+                    <li><a href="">母婴用品</a></li>
+                    <li><a href="">美妆个护</a></li>
+                    <li><a href="">食品保健</a></li>
+                    <li><a href="">潮流服装</a></li>
+                    <li><a href="">家具装饰</a></li>
+                    <li><a href="">手表饰品</a></li>
+                    <li><a href="">鞋包皮具</a></li>
+                    <li><a href="">家用电器</a></li>
+                    <li><a href="">电脑办公</a></li>
+                    <li><a href="">玩具文具</a></li>
+                    <li><a href="">汽车用品</a></li>
+                    <li><a href="">手机通讯</a></li>
+                    <li><a href="">流行饰品</a></li>
+                </ul>
+            </div>
+            <div class="second">
+                <p>推荐榜单</p>
+                <ul>
+                    <li><a href="">图书畅销榜</a></li>
+                    <li><a href="">音乐畅销榜</a></li>
+                    <li><a href="">影视畅销榜</a></li>
+                    <li><a href="">百货畅销榜</a></li>
+                    <li><a href="">图书畅销榜</a></li>
+                    <li><a href="">新书畅销榜</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 右侧内容栏 -->
+        <div class="right-body">
+            <div class="right-body-first">
+                <!-- 标题栏 -->
+                <img src="material/titleDot.jpg" alt="" class="main_bg">
+                <p class="right-body-title">数码影音</p>
+                <p class="right-body-hr"></p>
+                <!-- 细项 -->
+                <div class="Sproduct">
+                        <div class="goods1">
+                                <div>
+                                    <img src="material/electron-01.jpg" alt="" class="goodPh">
+                                    <img src="material/item_1.gif" alt="" class="goodNum">
+                                </div>
+                                <div>
+                                    <p class="link"><a href="">【仅限一天】爱国者 半岛铁盒 U10000毫</a></p>
+                                    <p class="Oprice">￥699.00</p>
+                                    <p class="newPrice">￥299.00</p>
+                                </div>
+                        </div>
+                        <div class="goods2">
+                                    <div>
+                                            <img src="material/electron-02.jpg" alt="" class="goodPh">
+                                            <img src="material/item_2.gif" alt="" class="goodNum">
+                                        </div>
+                                        <div>
+                                            <p class="link"><a href="">【限时抢购】羽博YB637YB647移动电源苹</a></p>
+                                            <p class="Oprice">￥499.00</p>
+                                            <p class="newPrice">￥199.00~359.00</p>
+                                        </div>
+                        </div>
+                        <div class="goods3">
+                                    <div>
+                                            <img src="material/electron-03.jpg" alt="" class="goodPh">
+                                            <img src="material/item_3.gif" alt="" class="goodNum">
+                                        </div>
+                                        <div>
+                                            <p class="link"><a href="">【2013升级版/热销5000件】Philips/飞利</a></p>
+                                            <p class="Oprice">￥499.00</p>
+                                            <p class="newPrice">￥299.00</p>
+                                        </div>
+                        </div>
+                        <div class="goods4">
+                                    <div>
+                                            <img src="material/electron-04.jpg" alt="" class="goodPh">
+                                            <img src="material/item_4.gif" alt="" class="goodNum">
+                                        </div>
+                                        <div>
+                                            <p class="link"><a href="">【绝对超值】紫光电子 双声道立体声耳机</a></p>
+                                            <p class="Oprice">￥99.00</p>
+                                            <p class="newPrice">￥49.00</p>
+                                        </div>
+                        </div>
+                        <div class="goods5">
+                                    <div>
+                                            <img src="material/electron-05.jpg" alt="" class="goodPh">
+                                            <img src="material/item_5.gif" alt="" class="goodNum">
+                                        </div>
+                                        <div>
+                                            <p class="link"><a href="">【热销2000台】紫光电子专业高清V-P30</a></p>
+                                            <p class="Oprice">￥599.00</p>
+                                            <p class="newPrice">￥299.00</p>
+                                        </div>
+                        </div>
+                </div>
+            </div>
+            <div class="right-body-second">
+                <!-- 标题栏 -->
+                <img src="material/titleDot.jpg" alt="" class="main_bg">
+                <p class="right-body-title">居家装饰</p>
+                <p class="right-body-hr"></p>
+                <!-- 细项 -->
+                <div class="Sproduct">
+                        <div class="goods1">
+                                <div>
+                                        <img src="material/home-1.jpg" alt="" class="goodPh">
+                                        <img src="material/item_1.gif" alt="" class="goodNum">
+                                    </div>
+                                    <div>
+                                        <p class="link"><a href="">诗蔓 【原创正品 独家首发】专柜正品 纯</a></p>
+                                        <p class="Oprice">￥568.00</p>
+                                        <p class="newPrice">￥128.00</p>
+                                    </div>
+                        </div>
+                        <div class="goods2">
+                                <div>
+                                        <img src="material/home-2.jpg" alt="" class="goodPh">
+                                        <img src="material/item_2.gif" alt="" class="goodNum">
+                                    </div>
+                                    <div>
+                                        <p class="link"><a href="">鼎顺 29.9秒杀 天然红檀木 佛珠手链手</a></p>
+                                        <p class="Oprice">￥99.00</p>
+                                        <p class="newPrice">￥29.00</p>
+                                    </div>
+                        </div>
+                        <div class="goods3">
+                                <div>
+                                        <img src="material/home-3.jpg" alt="" class="goodPh">
+                                        <img src="material/item_3.gif" alt="" class="goodNum">
+                                    </div>
+                                    <div>
+                                        <p class="link"><a href="">KASSIA卡希雅正品 9-10mm天然珍珠项链 </a></p>
+                                        <p class="Oprice">￥1280.00</p>
+                                        <p class="newPrice">￥258.00</p>
+                                    </div>
+                        </div>
+                        <div class="goods4">
+                                <div>
+                                        <img src="material/home-4.jpg" alt="" class="goodPh">
+                                        <img src="material/item_4.gif" alt="" class="goodNum">
+                                    </div>
+                                    <div>
+                                        <p class="link"><a href="">欧炫 最爱四叶草奥地利元素 水晶材质项</a></p>
+                                        <p class="Oprice">￥299.00</p>
+                                        <p class="newPrice">￥68.00</p>
+                                    </div>
+                        </div>
+                        <div class="goods5">
+                                <div>
+                                        <img src="material/home-5.jpg" alt="" class="goodPh">
+                                        <img src="material/item_5.gif" alt="" class="goodNum">
+                                    </div>
+                                    <div>
+                                        <p class="link"><a href="">凤凰涅磐项链 女 手链 天然水晶干青手串</a></p>
+                                        <p class="Oprice">￥398.00</p>
+                                        <p class="newPrice">￥198.00</p>
+                                    </div>
+                        </div>
+                </div>
+            </div>
+            <div class="right-body-third">
+                <!-- 标题栏 -->
+                <img src="material/titleDot.jpg" alt="" class="main_bg">
+                <p class="right-body-title">流行饰品</p>
+                <p class="right-body-hr"></p>
+                <!-- 细项 -->
+                <div class="Sproduct">
+                        <div class="goods1">
+                                <div>
+                                        <img src="material/beauty-1.jpg" alt="" class="goodPh">
+                                        <img src="material/item_1.gif" alt="" class="goodNum">
+                                    </div>
+                                    <div>
+                                        <p class="link"><a href="">流行饰品 当当优品 牛津布百纳箱 收纳箱 66L（多</a></p>
+                                        <p class="Oprice">￥179.00</p>
+                                        <p class="newPrice">￥79.00~89.00</p>
+                                    </div>
+                        </div>
+                        <div class="goods2">
+                                <div>
+                                        <img src="material/beauty-2.jpg" alt="" class="goodPh">
+                                        <img src="material/item_2.gif" alt="" class="goodNum">
+                                    </div>
+                                    <div>
+                                        <p class="link"><a href="">当当优品 全棉柔软吸水 纯色经典家庭中</a></p>
+                                        <p class="Oprice">￥49.00</p>
+                                        <p class="newPrice">￥29.00</p>
+                                    </div>
+                        </div>
+                        <div class="goods3">
+                                <div>
+                                        <img src="material/beauty-3.jpg" alt="" class="goodPh">
+                                        <img src="material/item_3.gif" alt="" class="goodNum">
+                                    </div>
+                                    <div>
+                                        <p class="link"><a href="">索尔诺五层儿童书柜/多功能收纳层架/简</a></p>
+                                        <p class="Oprice">￥200.00</p>
+                                        <p class="newPrice">￥105.00</p>
+                                    </div>
+                        </div>
+                        <div class="goods4">
+                                <div>
+                                        <img src="material/beauty-4.jpg" alt="" class="goodPh">
+                                        <img src="material/item_4.gif" alt="" class="goodNum">
+                                    </div>
+                                    <div>
+                                        <p class="link"><a href="">[当当自营]LOCK&LOCK乐扣 格拉斯耐</a></p>
+                                        <p class="Oprice">￥299.00</p>
+                                        <p class="newPrice">￥156.00</p>
+                                    </div>
+                        </div>
+                        <div class="goods5">
+                                <div>
+                                        <img src="material/beauty-5.jpg" alt="" class="goodPh">
+                                        <img src="material/item_5.gif" alt="" class="goodNum">
+                                    </div>
+                                    <div>
+                                        <p class="link"><a href="">[当当自营]LOCK&LOCK乐扣 运动水杯</a></p>
+                                        <p class="Oprice">￥149.00</p>
+                                        <p class="newPrice">￥89.00</p>
+                                    </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 脚注 -->
+    <div>
+        <hr>
+        <div id="footer">
+            Copyright(&copy;) 当当网 2004-2013, All Right Reserved 
+            <img src="material/validate.gif" alt="">
+            京ICP证041189号出版物经营许可证 新出发京批字第直0673号
+        </div>
+    </div>
+</body>
+</html>
