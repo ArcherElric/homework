@@ -1,0 +1,275 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <style>
+    /* 主体容器 */
+    #container {
+        width: 980px;
+        height: 580px;
+        margin: auto;
+        padding: 0;
+    }
+    /* logo */
+    .logo {
+        height: 40px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .logoright {
+        float: right;
+        margin: 10px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .logoright a {
+        font-size: 15px;
+    }
+
+    /* 主体部分 */
+    .mainbody {
+        height: 500px;
+        border: 1px solid #808080;
+    }
+    .mainbody>.leftbody,
+    .mainbody>.rightbody {
+        float: left;
+        border: 1px solid #2C2C2C;
+    }
+    /* 左侧内容 */
+    .leftbody {
+        width: 693px;
+        height: 100%;
+        background-color: #ffffff;
+    }
+    .leftbody p {
+        margin: 20px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    table {
+        margin: 0px 70px;
+        text-align: left;
+    }
+    table tr td {
+        padding: 6px 0px;
+    }
+    .left {
+        padding: 5px;
+        font-size: 17px;
+        text-align: right;
+    }
+    .td_a {
+        display: inline-block;
+        padding: 10px;
+    }
+    a {
+        font-size: 15px;
+    }
+    a:visited {
+        color: #0000EE;
+    }
+
+    /* 右侧内容 */
+    .rightbody {
+        width: 281px;
+        height: 100%;
+        background-color: #f7f7f7;
+    }
+    .first {
+        margin: 50px 0px 0px 40px;
+        text-align: left;
+        color: #888888;
+    }
+    .first span {
+        font-size: 25px;
+        color: #67A54B;
+    } 
+    .first p {
+        margin: 0px;
+    }
+    .rightbody div>div {
+        float: left;
+        text-align: center;
+        margin: 0px 10px;
+    }
+    .rightbody div>div p {
+        margin: 0px 0px 20px 0px;
+    }
+    h3 {
+        margin: 30px 0px 0px 5px;
+        clear: both;
+    }
+    /* 脚注 */
+    .tfooter {
+        height: 40px;
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+    <!-- 主容器 -->
+    <div id="container">
+        <!-- logo -->
+        <div class="logo">
+            <img src="images/logo.gif" alt="logo">&nbsp;
+            <span>10秒找到你所有朋友</span>
+            <span class="logoright">已有人人网账号，<a href="">登录</a></span>
+        </div>
+        <!-- 主体内容 -->
+        <div class="mainbody">
+            <!-- 左侧部分 -->
+            <div class="leftbody">
+                <!-- 表单元素 -->
+                <form action="index.html" method="POST">
+                        <table>
+                            <p>免费开通人人网账号</p>
+                            <tr>
+                                <td class="left">注册邮箱：</td>
+                                <td>
+                                    <input type="text" name="email" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    你还可以使用 <a href="">账号</a> 注册或者 <a href="">手机号</a> 注册
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left">创建密码：</td>
+                                <td>
+                                    <input type="password" name="psw" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left">真实姓名：</td>
+                                <td>
+                                    <input type="text" name="name" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left">性别：</td>
+                                <td>
+                                    <input type="radio" name="sex" id="" value="male">
+                                    男
+                                    <input type="radio" name="sex" id="" value="female">
+                                    女
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left">生日：</td>
+                                <td class="">
+                                    <select name="Birthday-year" id="" >
+                                        <option value="choose">1991</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1982">1982</option>
+                                        <option value="other">...</option>
+                                    </select>
+                                    年
+                                    <select name="Birthday-month" id="" >
+                                        <option value="1">10</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    月
+                                    <select name="Birthday-day" id="" >
+                                        <option value="1">30</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="...">...</option>
+                                    </select>
+                                    日
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left">我现在：</td>
+                                <td>
+                                    <select name="job" id="">
+                                        <option value="choose_one">正在上学</option>
+                                        <option value="student">学生</option>
+                                        <option value="teacher">老师</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <img src="images/verycode.gif" alt="">
+                                    <a href="" class="td_a">看不清换一张？</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left">验证码：</td>
+                                <td>
+                                    <input type="text" name="key" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="onerow">
+                                    <input type="image" alt="立即注册" class="button" src="images/btn_reg.gif">
+                                </td>
+                            </tr>
+                        </table>
+                </form>
+            </div>
+            <!-- 右侧部分 -->
+            <div class="rightbody">
+                <!-- 第一个盒子 -->
+                <div class="first">
+                    <h1>你知道吗？</h1>
+                    <p>人人网是中国 <span>最大</span> 的SNS社区</p>
+                    <p>平均每人找到 <span>105位</span> 好友</p>
+                </div>
+                <!-- 第二个盒子 -->
+                <div class="second">
+                    <h3>最热门公共主页</h3>
+                    <div>
+                        <img src="images/icon_zhaowei.gif" alt="">
+                        <p>赵薇</p>
+                    </div>
+                    <div>
+                        <img src="images/icon_likaifu.gif" alt="">
+                        <p>李开复</p>
+                    </div>
+                    <div>
+                        <img src="images/icon_shangjie.gif" alt="">
+                        <p>商界</p>
+                    </div>
+                </div>
+                <!-- 第三个盒子 -->
+                <div class="third">
+                    <h3>最热门游戏</h3>
+                    <div>
+                        <img src="images/icon_xxzz.gif" alt="">
+                        <p>小小战争</p>
+                    </div>
+                    <div>
+                        <img src="images/icon_rrnc.gif" alt="">
+                        <p>人人农场</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 脚注 -->
+        <div class="tfooter">
+            <p>点击免费开通账号表示同意冰遵守<a href="">人人服务条款</a></p>
+        </div>
+    </div>
+</body>
+</html>
