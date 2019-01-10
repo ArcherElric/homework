@@ -12,6 +12,7 @@
     }
     body {
         width: 1024px;
+        /* height: 600px; */
         margin: auto;
     }
     li {
@@ -83,6 +84,12 @@
     footer p {
         margin: 5px;
     }
+
+    /* 主体iframe部分 */
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
     </style>
 </head>
 <body>
@@ -142,7 +149,9 @@
     </nav>
 
     <!-- 主体部分 -->
-    <div id="mainbody"></div>
+    <div id="mainbody">
+        <iframe src="help.html" frameborder="0"></iframe>
+    </div>
 
     <!-- footer栏 -->
     <footer>
