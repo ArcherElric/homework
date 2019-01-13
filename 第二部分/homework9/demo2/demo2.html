@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    li {
+        list-style: none;
+    }
+    td {
+        padding: 0px;
+    }
+    .left {
+        width: 260px;
+    }
+    .blue {
+        color: blue;
+    }
+    span {
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <p><img src="image/apply_1.gif" alt=""></p>
+    <form action="" method="POST">
+        <table>
+            <tr>
+                <td class="left"><img src="image/apply_2.gif" alt=""></td>
+                <td>
+                    <h2>加盟申请表</h2>
+                    <p class="blue">注：打*为必选项</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <h3>代理申请基本信息</h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <p>申请人姓名<span>*</span></p>
+                </td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <p>籍贯<span>*</span></p>
+                </td>
+                <td>
+                    <select name="city" id="">
+                        <option value="choose">请选择...</option>
+                        <option value="SZ">深圳</option>
+                        <option value="SH">上海</option>
+                    </select>
+                    省
+                    <select name="place" id="">
+                        <option value="choose">请选择...</option>
+                        <option value="SZ">深圳</option>
+                        <option value="SH">上海</option>
+                    </select>
+                    区
+                </td>                
+            </tr>
+            <tr>
+                <td class="left">
+                    <p>性别<span>*</span></p>
+                </td>
+                <td>
+                    <input type="radio" name="sex" id="" value="male">男
+                    <input type="radio" name="sex" id="" value="female">女
+                </td>
+            </tr>
+            <tr>
+                <td class="left">   
+                    <p>身份证号码<span>*</span></p>
+                </td>
+                <td>
+                    <input type="text" name="ID" value="">
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <p>联系地址<span>*</span></p>
+                </td>
+                <td>
+                    <input type="text" name="content" value="">
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <p>电话<span>*</span></p>
+                </td>                
+                <td>
+                    <input type="text" name="phone" value="">
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <p>电子邮箱<span>*</span></p>
+                </td>                
+                <td>
+                    <input type="text" name="email" value="">
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <p>加盟地区<span>*</span></p>
+                </td>
+                <td>
+                    <input type="text" name="ID" value="">
+                </td>
+            </tr>
+            <tr>
+                <td class="left">
+                    <p>你是从哪里了解到我们的？</p>
+                </td>
+                <td>
+                    <input type="checkbox" name="where" id="" value="BD">Baidu
+                    <input type="checkbox" name="where" id="" value="GG">Google
+                    <input type="checkbox" name="where" id="" value="TV">电视广告
+                    <input type="checkbox" name="where" id="" value="ME">报刊杂志
+                    <input type="checkbox" name="where" id="" value="RB">路牌广告
+                    <input type="checkbox" name="where" id="" value="FR">朋友介绍
+                    <br>
+                    <input type="checkbox" name="where" id="" value="watch">
+                    <span>点击查看 "Android" 项目网上加盟免责声明</span>
+                    <a href="" class="blue">[ 点击查看 ]</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="left"></td>
+                <td>
+                    <input type="button" value="提交">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
