@@ -67,14 +67,68 @@
     /* 主体部分 */
     #mainbody {
         position: relative;
-        width: 1024px;
         margin: auto;
+        width: 980px;
+        height: 650px;
+        background-image: url("images/bg.gif");
+        background-repeat: no-repeat;
+    }
+
+    /* 主体左侧导航栏 */
+    .leftnav {
+        float: left;
+        position: relative;
+        width: 200px;
+    }
+    .leftnav_body {
+        padding-top: 40px;
+    }
+    .leftnav_body div {
+        height: 147px;
+    }
+    .leftnav_body div h3 {
+        padding-left: 10px;
+        font-size: 18px;
+        color: #FF8E31;
+    }
+    .leftnav_body table {
+        display: block;
+        padding: 5px 0px 0px 5px; 
+    }
+    .leftnav_body tr td {
+        font-size: 14px;
+        margin: 1px;
+        padding: 1px;
+    }
+
+    /* 中间部分 */
+    .centerbody {
+        position: relative;
+        float: left;
+        margin: 9px;
+        width: 550px;
+        height: 200px;
+    }
+    .centerbody img {
+        position: absolute;
+    }
+    .centerbody ul {
+        position: absolute;
+        left: 15px;
+        bottom: 7px;
+    }
+    .centerbody ul li {
+        background-color: #cccccc;
+        width: 17px;
+        height: 17px;
+        text-align: center;
     }
 
     /* footer栏 */
     footer {
+        clear: both;
         width: 1024px;
-        margin: auto;
+        /* margin: -400px auto; */
         text-align: center;
         font-size: 13px;
     }
@@ -150,7 +204,152 @@
 
     <!-- 主体部分 -->
     <div id="mainbody">
-        <iframe src="help.html" frameborder="0"></iframe>
+        <!-- <iframe src="help1.html" frameborder="0"></iframe> -->
+        <!-- 背景图片 -->
+        <!-- <img src="images/bg.gif" alt=""> -->
+        <!-- 主体部分左侧导航栏 -->
+        <div class="leftnav">
+            <div class="leftnav_body">
+                <div>
+                <h3>家用电器</h3>
+                    <table>
+                    <tr>
+                        <td>大家电</td>
+                        <td>洗衣机</td>
+                        <td>平板电视</td>
+                    </tr>
+                    <tr>
+                        <td>电热水器</td>
+                        <td>家庭音响</td>
+                        <td>热水器</td>
+                    </tr>
+                    <tr>
+                        <td>空调冰箱</td>
+                        <td>冰柜</td>
+                        <td>DVD</td>
+                    </tr>
+                    <tr>
+                        <td>电视附件</td>
+                        <td>电燃气</td>
+                        <td>家电下乡</td>
+                    </tr>
+                    <tr>
+                        <td>家电服务</td>
+                        <td>电饭煲</td>
+                        <td>摄像机</td>
+                    </tr>
+                    </table>
+                </div>
+                <div>
+                <h3>书籍</h3>
+                    <table>
+                    <tr>
+                        <td>大家电</td>
+                        <td>洗衣机</td>
+                        <td>平板电视</td>
+                    </tr>
+                    <tr>
+                        <td>电热水器</td>
+                        <td>家庭音响</td>
+                        <td>热水器</td>
+                    </tr>
+                    <tr>
+                        <td>空调冰箱</td>
+                        <td>冰柜</td>
+                        <td>DVD</td>
+                    </tr>
+                    <tr>
+                        <td>电视附件</td>
+                        <td>电燃气</td>
+                        <td>家电下乡</td>
+                    </tr>
+                    <tr>
+                        <td>家电服务</td>
+                        <td>电饭煲</td>
+                        <td>摄像机</td>
+                    </tr>
+                    </table>
+                </div>
+                <div>
+                <h3>手机数码</h3>
+                    <table>
+                    <tr>
+                        <td>大家电</td>
+                        <td>洗衣机</td>
+                        <td>平板电视</td>
+                    </tr>
+                    <tr>
+                        <td>电热水器</td>
+                        <td>家庭音响</td>
+                        <td>热水器</td>
+                    </tr>
+                    <tr>
+                        <td>空调冰箱</td>
+                        <td>冰柜</td>
+                        <td>DVD</td>
+                    </tr>
+                    <tr>
+                        <td>电视附件</td>
+                        <td>电燃气</td>
+                        <td>家电下乡</td>
+                    </tr>
+                    <tr>
+                        <td>家电服务</td>
+                        <td>电饭煲</td>
+                        <td>摄像机</td>
+                    </tr>
+                    </table>
+                </div>
+                <div>
+                <h3>日用百货</h3>
+                    <table>
+                    <tr>
+                        <td>大家电</td>
+                        <td>洗衣机</td>
+                        <td>平板电视</td>
+                    </tr>
+                    <tr>
+                        <td>电热水器</td>
+                        <td>家庭音响</td>
+                        <td>热水器</td>
+                    </tr>
+                    <tr>
+                        <td>空调冰箱</td>
+                        <td>冰柜</td>
+                        <td>DVD</td>
+                    </tr>
+                    <tr>
+                        <td>电视附件</td>
+                        <td>电燃气</td>
+                        <td>家电下乡</td>
+                    </tr>
+                    <tr>
+                        <td>家电服务</td>
+                        <td>电饭煲</td>
+                        <td>摄像机</td>
+                    </tr>
+                    </table>   
+                </div>
+            </div>
+        </div>
+
+        <!-- 主体中间部分 -->
+        <div class="centerbody">
+            <!-- 轮播图 -->
+            <div class="rowP">
+                <img src="images/ad-01.jpg" alt="" id="img1">
+                <img src="images/ad-02.jpg" alt="" id="img2">
+                <img src="images/ad-03.jpg" alt="" id="img3">
+                <img src="images/ad-04.jpg" alt="" id="img4">
+            </div>
+            <iframe src="" frameborder="0"></iframe>
+            <ul>
+                <li id="list1"><a href="">1</a></li>
+                <li id="list2"><a href="">2</a></li>
+                <li id="list3"><a href="">3</a></li>
+                <li id="list3"><a href="">4</a></li>
+            </ul>
+        </div>
     </div>
 
     <!-- footer栏 -->
