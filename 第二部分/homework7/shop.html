@@ -77,74 +77,42 @@
 
         /* 主体部分 */
         .mainbody {
-            margin: 0px 10px 0px 25px;
-            height: 550px;
+            width: 980px;
+            margin: auto;
         }
-
-        .mainbody img {
-            display: block;
+        .center,
+        .bottom {
+            background: url("images/buytitle_bg.gif") no-repeat;
         }
-
-        /* 左侧部分 */
-        .left {
-            float: left;
-            position: relative;
+        .button {
+            width: 83px;
+            height: 35px;
+            background: url("images/submit.gif") no-repeat;
+        }
+        .mainbody span {
             display: inline-block;
-            height: 550px;
-            width: 190px;
-            background-image: url("images/customer.jpg");
-            background-repeat: no-repeat;
+            margin: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
         }
-
-        .left>ul {
-            position: absolute;
-            top: 200px;
-            left: 10px;
+        h3,
+        .mainbody p {
+            margin: 5px 50px;
+            padding: 3px 0px;
         }
-
-        .left li {
-            position: relative;
-            list-style: none;
+        .thead {
+            font-weight: bold;
         }
-
-        .left a {
-            text-decoration: none;
+        .center table {
+            width: 980px;
+            font-size: 14px;
         }
-
-        .left a:visited {
-            color: #000000;
+        .oldprice {
+            color: #cccccc;
         }
-
-        .left a:hover {
-            color: #FF8E31;
+        .newprice {
+            color: #ff0000;
         }
-        #dd {
-            margin: 5px;
-            padding: 10px 0px 10px 40px;
-        }
-        .left ul li {
-            display: block;
-        }
-
-        /* 右侧部分 */
-        .right {
-            float: left;
-            display: inline-block;
-            padding: 0px 20px;
-            height: 546px;
-            width: 740px;
-            border: 1px solid #DB969C;
-        }
-        h2 {
-            margin: 10px;
-        }
-        .right p {
-            margin: 10px;
-        }
-        h3 {
-            margin: 10px;
-        }
-
         /* footer栏 */
         footer {
             clear: both;
@@ -159,11 +127,6 @@
 
         footer p {
             margin: 5px;
-        }
-
-        iframe {
-            width: 790px;
-            height: 600px;
         }
     </style>
 </head>
@@ -226,35 +189,78 @@
 
     <!-- 主体部分 -->
     <div class="mainbody">
-        <div class="left">
-            <ul>
-                <li><a href="help1.html"><img src="images/reg.jpg" alt=""></a></li>
-                <li><a href="help2.html"><img src="images/buy.jpg" alt=""></a></li>
-                <li><a href="help3.html" target="right"><img src="images/sale.jpg" alt=""></a>
-                    <ul id="dd">
-                        <li><a href="">安全中心</a></li>
-                        <li><a href="">物流中心</a></li>
-                        <li><a href="">资金中心</a></li>
-                        <li><a href="">纠纷处理</a></li>
-                    </ul>
-                </li>
-                <li><a href=""><img src="images/person.jpg" alt=""></a></li>
-            </ul>
+        <div class="top">
+            <a href="shop.html"><img src="images/mycart.gif" alt=""></a>
+            <span>全场运费一律2元</span>
+            <a href=""><span>简易计算器</span></a>
         </div>
-        <div class="right">
-            <div class="top">
-            <h2>知识课堂>>商家帮助</h2>
-            </div>
-            <img src="images/reg_line.jpg" alt="">
-            <div class="main">
-            <p>享受贵美网免费网上交易乐趣，您需要了解贵美贝的网上安全交易流程和网上购物四步曲。</p>
-            <h3>网上安全交易流程如下：</h3>
-            <img src="images/buy_sep1.jpg" alt="">
-            <h3>客户交易演示四步曲：</h3>
-            <img src="images/buy_sep2.jpg" alt="">
-            </div>
+        <div class="center">
+            <h3>确认商品价格与交易条件</h3>
+            <table>
+                <tr class="thead">
+                    <td>商品名</td>
+                    <td>原价</td>
+                    <td>优惠价</td>
+                    <td>打折</td>
+                    <td>数量</td>
+                    <td>删除</td>
+                </tr>
+                <tr>
+                    <td>攀高搓捶背靠垫按摩器（蓝色）（定制）</td>
+                    <td class="oldprice">￥258.00</td>
+                    <td class="newprice">￥129.00</td>
+                    <td>50折</td>
+                    <td><input type="text" value="1"></td>
+                    <td><a href="">删除</a></td>
+                </tr>
+                <tr>
+                    <td>郝彬美国口语-美国口语成功训练系统（MP3）</td>
+                    <td class="oldprice">￥480.00</td>
+                    <td class="newprice">￥292.00</td>
+                    <td>60折</td>
+                    <td><input type="text" value="1"></td>
+                    <td><a href="">删除</a></td>
+                </tr>
+                <tr>
+                    <td>点奥斯汀全集（DVD-9）（赠BBC产品目录...</td>
+                    <td class="oldprice">￥138.00</td>
+                    <td class="newprice">￥103.00</td>
+                    <td>80折</td>
+                    <td><input type="text" value="1"></td>
+                    <td><a href="">删除</a></td>
+                </tr>
+                <tr>
+                    <td>继续挑选商品</td>
+                    <td colspan="2">￥527.40</td>
+                    <td colspan="3">你共节省：￥348.60</td>
+                </tr>            
+            </table>
         </div>
-        <!-- <iframe src="" frameborder="0" name="right" scrolling="no"></iframe> -->
+        <div class="bottom">
+            <p>补充您的邮件地址和联系人基本信息</p>
+            <form action="POST">
+                <table>
+                    <tr>
+                        <td>收件人：</td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>地&nbsp;&nbsp;址：</td>
+                        <td><input type="text"><a href="">请点击填写地址</a></td>
+                    </tr>
+                    <tr>
+                        <td>电&nbsp;&nbsp;话：</td>
+                        <td><input type="text" name="" id="" size="1">-<input type="text" size="4">-<input type="text"size="1">(区号-电话号码-分机)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="" class="button">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </div>
 
     <!-- footer栏 -->

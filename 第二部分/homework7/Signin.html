@@ -64,70 +64,93 @@
         text-align: center;
     }
 
-    /* 主体部分 */
+    /* 中间部分 */
     .mainbody {
-        margin: 0px 10px 0px 25px;
-        height: 550px;
+        margin: auto;
+        width: 977px;
+        height: 500px;
+        background: url("images/login_bg.gif") no-repeat;
+        font-size: 14px;
     }
-    .mainbody img {
-        display: block;
-    }
-    .left {
-        float: left;
-        position: relative;
-        display: inline-block;
-        height: 550px;
-        width: 190px;
-        background-image: url("images/customer.jpg");
-        background-repeat: no-repeat;
-    }
-    .left ul {
-        position: absolute;
-        top: 200px;
-        left: 10px;
-    }
-    .left li {
-        list-style: none;
-    }
-    .left a {
-        text-decoration: none;
-    }
-    .left a:visited {
-        color: #000000;
-    }
-    .left a:hover {
-        color: #FF8E31;
-    }
-    .right {
-        float: left;
-        display: inline-block;
-        padding: 0px 20px;
-        height: 546px;
-        width: 740px;
-        border: 1px solid #DB969C;
-    }
-    #main ul {
-        margin: 10px 0px;
-        padding: 0px 15px;
-    }
-    #main ul li {
-        display: block;
-        list-style-image: url("images/list_icon.gif");
-    }
-    #main ul li a {
-        color: #0000ff;
+    .mainbody a {
+        font-size: 13px;
+        color: blue;
         text-decoration: underline;
     }
-    h2 {
-        margin: 10px;
+    .mainbody div {
+        float: left;
+        margin: 40px 0px 10px 0px;
+        width: 49%;
+        height: 500px;
     }
-    p {
-        margin: 10px;
+    .mainleft {
+        border-right: 1px solid #cccccc;
     }
+    /* 中间左边部分 */
+    table {
+        margin: auto;
+    }
+    table tr td{
+        padding: 5px 0px;
+    }
+    .lasttd {
+        padding-left: 47px;
+    }
+    .mainleft ul li {
+        margin: 10px 0px 10px 50px;
+        display: block;
+        font-size: 13px;
+    }
+    /* 中间右侧部分 */
+    .mainright>p {
+        margin: 30px 0px 0px 30px;
+        height: 30px;
+    }
+    .mainright>div {
+        margin: 0px 0px 10px 70px;
+        width: 100%;
+    }
+    .mainright ul {
+        display: inline-block;
+    }
+    .mainright ul li {
+        display: block;
+        margin: 23px 0px;
+    }
+    .mainright span {
+        color: #0000ff;
+    }
+    #onlyP {
+        margin-left: 60px;
+    }
+    #lastpart {
+        margin-top: 10px;
+        width: 300px;
+        height: 120px;
+        background-color: #FDF7E7;
+        border: 1px solid #F2BB6F;
+        border-top: 2px solid  #F2BB6F;
+    }
+    #lastone,
+    #lasttwo {
+        margin: 10px 50px;
+        width: 200px;
+        height: 35px;
+        text-align: left;
+        border: 1px solid #F5DCBC;
+        background-color: #ffffff;
+    }
+    #lastone span,
+    #lasttwo span{
+        font-size: 13px;
+        color: #000000;
+    }
+
     /* footer栏 */
     footer {
         clear: both;
         width: 1024px;
+        /* margin: -400px auto; */
         text-align: center;
         font-size: 13px;
     }
@@ -198,29 +221,62 @@
 
     <!-- 主体部分 -->
     <div class="mainbody">
-        <div class="left">
-        <ul>
-            <li><a href="help1.html"><img src="images/reg.jpg" alt=""></a></li>
-            <li><a href="help2.html"><img src="images/buy.jpg" alt=""></a></li>
-            <li><a href="help3.html" target="right"><img src="images/sale.jpg" alt=""></a></li>
-            <li><a href=""><img src="images/person.jpg" alt=""></a></li>
-        </ul>
+        <div class="mainleft">
+            <p><img src="images/title_login_2.png" alt=""></p>
+            <form action="post">
+                <table>
+                    <tr>
+                        <td>会员名：</td>
+                        <td>
+                            <input type="text" name="" id="">
+                            <span>(可包含 a-z、0-9 和下划线)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>密&nbsp;&nbsp;&nbsp;码：</td>
+                        <td>
+                            <input type="password" name="password" id="">
+                            <span>(至少包含6个字符)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="lasttd">
+                            <a href=""><img src="images/submit.gif" alt=""></a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <ul>
+                <li>δ&nbsp;&nbsp;&nbsp;<a href="">什么是安全登录。</a></li>
+                <li>δ&nbsp;&nbsp;&nbsp;香港会员（繁体中文用户）由此<a href="">进入</a></li>
+                <li>δ&nbsp;&nbsp;&nbsp;<a href="">密码安全贴士</a></li>
+                <li>δ&nbsp;&nbsp;&nbsp;防止病毒或者木马窃取您的帐户信息，<a href="">在线检查</a>您的电脑是否安全。</li>
+            </ul>
         </div>
-        <div class="right">
-            <div class="top">
-                <h2>知识课堂>>注册&认证</h2>
-            </div>
-            <img src="images/reg_line.jpg" alt="">
-            <div id="main">
-                <p>享受贵美网免费网上交易乐趣，并且在超人气的社区尽情交流您的网上购物经验，您需要先注册成为贵美的会员，具体的步骤如下：</p>
-                <img src="images/reg_step.jpg" alt="">
+        <div class="mainright">
+            <p><img src="images/register.gif" alt=""></p>
+            <div>
+                <img src="images/rightnav.png" alt="">
                 <ul>
-                    <li><a href="">如何激活会员名？</a></li>
-                    <li><a href="">如何注册贵美会员？</a></li>
-                    <li><a href="">注册时密码设置有什么要求？</a></li>
-                    <li><a href="">贵美认证</a></li>
-                    <li><a href="">为什么验证码明明是对的，却提示我们输入错误？</a></li>
+                    <li><span>便宜有好货！</span>超过700万件商品任你选。</li>
+                    <li><span>买卖更安全！</span>交易超安全。</li>
+                    <li><span>免费开网店！</span>轻松赚钱交友。</li>
+                    <li><span>超人气社区！</span>精彩活动每一天。</li>
                 </ul>
+                <p id="onlyP"><a href="SignUp.html"><img src="images/registernow.gif" alt=""></a></p>
+                <div id="lastpart">
+                    <div id="lastone">
+                        <p>
+                            <img src="images/people.png" alt="">
+                            <span>您已经是会员了？<a href="Signin.html">由此登入</a></span>
+                        </p>
+                    </div>
+                    <div id="lasttwo">
+                        <img src="images/CN.png" alt="">
+                        <span>繁体中文用户由此<a href="SignUp.html">注册</a></span>
+                    </div>
+                </div>         
             </div>
         </div>
     </div>

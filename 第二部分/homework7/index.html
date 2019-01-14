@@ -102,15 +102,15 @@
     }
 
     /* 中间部分 */
+    /* 轮播图 */
     .centerbody {
         position: relative;
         float: left;
         margin: 9px;
         width: 550px;
         height: 200px;
-    }
-    .centerbody img {
-        position: absolute;
+        background-image: url("images/ad-01.jpg") ;
+        background-repeat: no-repeat;
     }
     .centerbody ul {
         position: absolute;
@@ -123,12 +123,59 @@
         height: 17px;
         text-align: center;
     }
+    .centerbody ul li a {
+        font-size: 14px;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 主要商品信息 */
+    .mainSale {
+        margin: 20px;
+        margin-top: 25px;
+        width: 500px;
+        height: 400px;
+    }
+    .mainSale div {
+        float: left;
+        width: 500px;
+        height: 140px;
+    }
+    .mainSale div>div {
+        float: left;
+        width: 160px;
+        height: 100px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .mainSale div>div img {
+        border: 1px solid #000000;
+    }
+
+    /* 右侧部分 */
+    .rightnav table {
+        padding-top: 180px;
+        width: 200px;
+        height: 100px;
+        font-size: 10px;
+    }
+    .rightnav img {
+        border: 1px solid #cccccc;
+    }
+    .rightnav table tr {
+        height: 50px;
+    }
+    .rightnav table tr td {
+        margin: 0px;
+        padding: 5px 0px;
+    }
 
     /* footer栏 */
     footer {
         clear: both;
         width: 1024px;
-        /* margin: -400px auto; */
         text-align: center;
         font-size: 13px;
     }
@@ -139,11 +186,7 @@
         margin: 5px;
     }
 
-    /* 主体iframe部分 */
-    iframe {
-        width: 100%;
-        height: 100%;
-    }
+    
     </style>
 </head>
 <body>
@@ -154,13 +197,13 @@
         <nav class="nav1">
             <ul>
                 <li>
-                    <a href="">
+                    <a href="shop.html">
                         <img src="images/shopcar.png" alt="">
                         购物车
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="help1.html">
                         <img src="images/boom.png" alt="">
                         帮忙中心
                     </a>
@@ -178,10 +221,10 @@
                     </a>
                 </li>
                 <li>
-                    <button>登录</button>
+                    <button><a href="Signin.html">登录</a></button>
                 </li>
                 <li>
-                    <button>注册</button>
+                    <button><a href="SignUp.html">注册</a></button>
                 </li>
             </ul>
         </nav>
@@ -190,12 +233,12 @@
         <!-- 主导航栏 -->
         <nav class="nav2">
             <ul>
-                <li><a href="">首&nbsp;&nbsp;页</a></li>
+                <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
                 <li><a href="">家用电器</a></li>
                 <li><a href="">手机数码</a></li>
                 <li><a href="">日用百货</a></li>
                 <li><a href="">书&nbsp;&nbsp;籍</a></li>
-                <li><a href="">帮助中心</a></li>
+                <li><a href="help1.html">帮助中心</a></li>
                 <li><a href="">免费开店</a></li>
                 <li><a href="">全球咨询</a></li>
             </ul>
@@ -204,9 +247,6 @@
 
     <!-- 主体部分 -->
     <div id="mainbody">
-        <!-- <iframe src="help1.html" frameborder="0"></iframe> -->
-        <!-- 背景图片 -->
-        <!-- <img src="images/bg.gif" alt=""> -->
         <!-- 主体部分左侧导航栏 -->
         <div class="leftnav">
             <div class="leftnav_body">
@@ -336,19 +376,82 @@
         <!-- 主体中间部分 -->
         <div class="centerbody">
             <!-- 轮播图 -->
-            <div class="rowP">
-                <img src="images/ad-01.jpg" alt="" id="img1">
-                <img src="images/ad-02.jpg" alt="" id="img2">
-                <img src="images/ad-03.jpg" alt="" id="img3">
-                <img src="images/ad-04.jpg" alt="" id="img4">
-            </div>
-            <iframe src="" frameborder="0"></iframe>
+            <iframe src="" frameborder="0" name="ifr" scrolling="no"></iframe>
             <ul>
-                <li id="list1"><a href="">1</a></li>
-                <li id="list2"><a href="">2</a></li>
-                <li id="list3"><a href="">3</a></li>
-                <li id="list3"><a href="">4</a></li>
+                <li id="list1"><a href="./images/ad-01.jpg" target="ifr">1</a></li>
+                <li id="list2"><a href="./images/ad-02.jpg" target="ifr">2</a></li>
+                <li id="list3"><a href="./images/ad-03.jpg" target="ifr">3</a></li>
+                <li id="list3"><a href="./images/ad-04.jpg" target="ifr">4</a></li>
             </ul>
+            <!-- 主要商品信息 -->
+            <div class="mainSale">
+                <div>
+                    <div>
+                        <img src="images/promote-1.jpg" alt="">
+                        <p>惠普商务移动应用英寸笔记本</p>
+                    </div>
+                    <div>
+                        <img src="images/promote-2.jpg" alt="">
+                        <p>夏新N6 GPS真人语音导航手机 超低特价疯抢 数量有限！</p>
+                    </div>
+                    <div>
+                        <img src="images/promote-3.jpg" alt="">
+                        <p>三星家庭影院 HT-TZ325 购机送好礼（超值性价比）</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="images/laser-pen.jpg" alt="">
+                        <p>明基MP512投影机 2899元送100元京卷 SVGA 2200流明</p>
+                    </div>
+                    <div>
+                        <img src="images/mouse.jpg" alt="">
+                        <p>罗技数据1TB移动鼠标729元开抢了！</p>
+                    </div>
+                    <div>
+                        <img src="images/earphone.jpg" alt="">
+                        <p>海森那尔极品耳机绝对不容错过！</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="images/Wancom.jpg" alt="">
+                        <p>亚马逊随时阅读，随时记录，时尚最佳选择！</p>
+                    </div>
+                    <div>
+                        <img src="images/Frame.jpg" alt="">
+                        <p>优雅相框</p>
+                    </div>
+                    <div>
+                        <img src="images/notebook.jpg" alt="">
+                        <p>IBM 2009最新上网本，特性尽显</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧部分 -->
+        <div class="rightnav">
+            <!-- <div> -->
+                <table>
+                    <tr>
+                        <td><img src="images/show1.jpg" alt=""></td>
+                        <td><p>大牌狂降价，三折直送</p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/show2.jpg" alt=""></td>
+                        <td><p>大学要求老师开网店</p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/show3.jpg" alt=""></td>
+                        <td><p>黑眼圈推荐，美白不停</p></td>
+                    </tr>  
+                    <tr>
+                        <td><img src="images/show4.jpg" alt=""></td>
+                        <td><p>瘦身狂潮风，修形之选</p></td>
+                    </tr>                  
+                </table>
+            <!-- </div> -->
         </div>
     </div>
 

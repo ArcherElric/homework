@@ -1,145 +1,169 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>贵美商城</title>
     <style>
-    /* 去除默认设置 */
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
-    body {
-        width: 1024px;
-        /* height: 600px; */
-        margin: auto;
-    }
-    li {
-        display: inline-block;
-        list-style-type: none
-    }
-    a {
-        color: #000000;
-        text-decoration: none;
-    }
-    a:visited {
-        color: #000000;
-    }
+        /* 去除默认设置 */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
 
-    /* 导航栏 */
-    #mainnav {
-        position: relative;
-    }
-    /* 顶部导航栏 */
-    .nav1 ul {
-        position: absolute;
-        top: 10px;
-        right: 30px;
-    }
-    .nav1 li {
-        padding: 0px 2px;
-        font-size: 16px;
-    }
-    .nav1 a img {
-        width: 20px;
-        height: 20px;
-    }
-    /* 欢迎及时间栏 */
-    nav p {
-        position: absolute;
-        bottom: 35%;
-        right: 20%;
-        font-size: 14px;
-        color: #676664;
-    }
-    /* 主导航栏 */
-    .nav2 ul {
-        position: absolute;
-        bottom: 25px;
-        left: 25px;
-    }
-    .nav2 ul li {
-        width: 79px;
-        text-align: center;
-    }
+        body {
+            width: 1024px;
+            /* height: 600px; */
+            margin: auto;
+        }
 
-    /* 主体部分 */
-    .mainbody {
-        margin: 0px 10px 0px 25px;
-        height: 550px;
-    }
-    .mainbody img {
-        display: block;
-    }
-    .left {
-        float: left;
-        position: relative;
-        display: inline-block;
-        height: 550px;
-        width: 190px;
-        background-image: url("images/customer.jpg");
-        background-repeat: no-repeat;
-    }
-    .left ul {
-        position: absolute;
-        top: 200px;
-        left: 10px;
-    }
-    .left li {
-        list-style: none;
-    }
-    .left a {
-        text-decoration: none;
-    }
-    .left a:visited {
-        color: #000000;
-    }
-    .left a:hover {
-        color: #FF8E31;
-    }
-    .right {
-        float: left;
-        display: inline-block;
-        padding: 0px 20px;
-        height: 546px;
-        width: 740px;
-        border: 1px solid #DB969C;
-    }
-    #main ul {
-        margin: 10px 0px;
-        padding: 0px 15px;
-    }
-    #main ul li {
-        display: block;
-        list-style-image: url("images/list_icon.gif");
-    }
-    #main ul li a {
-        color: #0000ff;
-        text-decoration: underline;
-    }
-    h2 {
-        margin: 10px;
-    }
-    p {
-        margin: 10px;
-    }
-    /* footer栏 */
-    footer {
-        clear: both;
-        width: 1024px;
-        text-align: center;
-        font-size: 13px;
-    }
-    footer ul {
-        margin: 10px 0px;
-    }
-    footer p {
-        margin: 5px;
-    }
+        li {
+            display: inline-block;
+            list-style-type: none
+        }
 
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #000000;
+        }
+
+        /* 导航栏 */
+        #mainnav {
+            position: relative;
+        }
+
+        /* 顶部导航栏 */
+        .nav1 ul {
+            position: absolute;
+            top: 10px;
+            right: 30px;
+        }
+
+        .nav1 li {
+            padding: 0px 2px;
+            font-size: 16px;
+        }
+
+        .nav1 a img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* 欢迎及时间栏 */
+        nav p {
+            position: absolute;
+            bottom: 35%;
+            right: 20%;
+            font-size: 14px;
+            color: #676664;
+        }
+
+        /* 主导航栏 */
+        .nav2 ul {
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+        }
+
+        .nav2 ul li {
+            width: 79px;
+            text-align: center;
+        }
+
+        /* 主体部分 */
+        .mainbody {
+            margin: 0px 10px 0px 25px;
+            height: 550px;
+        }
+
+        .mainbody img {
+            display: block;
+        }
+
+        .left {
+            float: left;
+            position: relative;
+            display: inline-block;
+            height: 550px;
+            width: 190px;
+            background-image: url("images/customer.jpg");
+            background-repeat: no-repeat;
+        }
+
+        .left ul {
+            position: absolute;
+            top: 200px;
+            left: 10px;
+        }
+
+        .left li {
+            list-style: none;
+        }
+
+        .left a {
+            text-decoration: none;
+        }
+
+        .left a:visited {
+            color: #000000;
+        }
+
+        .left a:hover {
+            color: #FF8E31;
+        }
+
+        .right {
+            float: left;
+            display: inline-block;
+            padding: 0px 20px;
+            height: 546px;
+            width: 740px;
+            border: 1px solid #DB969C;
+        }
+
+        #main ul {
+            margin: 10px 0px;
+            padding: 0px 15px;
+        }
+
+        #main ul li {
+            display: block;
+            list-style-image: url("images/list_icon.gif");
+        }
+
+        #main ul li a {
+            color: #0000ff;
+            text-decoration: underline;
+        }
+        h2 {
+            margin: 10px;
+        }
+        p {
+            margin: 10px;
+        }
+        /* footer栏 */
+        footer {
+            clear: both;
+            width: 1024px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        footer ul {
+            margin: 10px 0px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
     </style>
 </head>
+
 <body>
     <!--logo 导航栏 -->
     <nav id="mainnav">
@@ -199,28 +223,22 @@
     <!-- 主体部分 -->
     <div class="mainbody">
         <div class="left">
-        <ul>
-            <li><a href="help1.html"><img src="images/reg.jpg" alt=""></a></li>
-            <li><a href="help2.html"><img src="images/buy.jpg" alt=""></a></li>
-            <li><a href="help3.html" target="right"><img src="images/sale.jpg" alt=""></a></li>
-            <li><a href=""><img src="images/person.jpg" alt=""></a></li>
-        </ul>
+            <ul>
+                <li><a href="help1.html"><img src="images/reg.jpg" alt=""></a></li>
+                <li><a href="help2.html"><img src="images/buy.jpg" alt=""></a></li>
+                <li><a href="help3.html" target="right"><img src="images/sale.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/person.jpg" alt=""></a></li>
+            </ul>
         </div>
+
         <div class="right">
             <div class="top">
-                <h2>知识课堂>>注册&认证</h2>
+                <h2>知识课堂>>商家帮助</h2>
             </div>
             <img src="images/reg_line.jpg" alt="">
             <div id="main">
-                <p>享受贵美网免费网上交易乐趣，并且在超人气的社区尽情交流您的网上购物经验，您需要先注册成为贵美的会员，具体的步骤如下：</p>
-                <img src="images/reg_step.jpg" alt="">
-                <ul>
-                    <li><a href="">如何激活会员名？</a></li>
-                    <li><a href="">如何注册贵美会员？</a></li>
-                    <li><a href="">注册时密码设置有什么要求？</a></li>
-                    <li><a href="">贵美认证</a></li>
-                    <li><a href="">为什么验证码明明是对的，却提示我们输入错误？</a></li>
-                </ul>
+                <p>做贵美网的商家，拥有自己的个性小店，您需要了解贵美网上交易要点，请看出售商品的步骤：</p>
+                <img src="images/sale_step.jpg" alt="">
             </div>
         </div>
     </div>
@@ -262,4 +280,5 @@
         </div>
     </footer>
 </body>
+
 </html>

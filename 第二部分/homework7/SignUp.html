@@ -75,74 +75,39 @@
             text-align: center;
         }
 
-        /* 主体部分 */
+        /* 中间部分 */
         .mainbody {
-            margin: 0px 10px 0px 25px;
-            height: 550px;
+            margin: auto;
+            height: 420px;
+            width: 978px;
+            background: url("images/reg_bg.gif") no-repeat;
         }
-
-        .mainbody img {
-            display: block;
+        .mainleft {
+            float: left;
+            padding: 40px 0px 0px 10px;
+            width: 500px;
         }
-
-        /* 左侧部分 */
+        .mainleft table tr td {
+            padding: 5px;
+            font-size: 13px;
+        }
         .left {
+            width: 120px;
+            text-align: right;
+        }
+        .mainright {
             float: left;
-            position: relative;
+        }
+        .mainright div {
+            width: 300px;
+            margin: auto;
+            padding: 40px 0px 0px 100px; 
+        }
+        .mainright div p {
+            margin: 10px;
+        }
+        .mainright img {
             display: inline-block;
-            height: 550px;
-            width: 190px;
-            background-image: url("images/customer.jpg");
-            background-repeat: no-repeat;
-        }
-
-        .left>ul {
-            position: absolute;
-            top: 200px;
-            left: 10px;
-        }
-
-        .left li {
-            position: relative;
-            list-style: none;
-        }
-
-        .left a {
-            text-decoration: none;
-        }
-
-        .left a:visited {
-            color: #000000;
-        }
-
-        .left a:hover {
-            color: #FF8E31;
-        }
-        #dd {
-            margin: 5px;
-            padding: 10px 0px 10px 40px;
-        }
-        .left ul li {
-            display: block;
-        }
-
-        /* 右侧部分 */
-        .right {
-            float: left;
-            display: inline-block;
-            padding: 0px 20px;
-            height: 546px;
-            width: 740px;
-            border: 1px solid #DB969C;
-        }
-        h2 {
-            margin: 10px;
-        }
-        .right p {
-            margin: 10px;
-        }
-        h3 {
-            margin: 10px;
         }
 
         /* footer栏 */
@@ -161,10 +126,6 @@
             margin: 5px;
         }
 
-        iframe {
-            width: 790px;
-            height: 600px;
-        }
     </style>
 </head>
 
@@ -226,35 +187,84 @@
 
     <!-- 主体部分 -->
     <div class="mainbody">
-        <div class="left">
-            <ul>
-                <li><a href="help1.html"><img src="images/reg.jpg" alt=""></a></li>
-                <li><a href="help2.html"><img src="images/buy.jpg" alt=""></a></li>
-                <li><a href="help3.html" target="right"><img src="images/sale.jpg" alt=""></a>
-                    <ul id="dd">
-                        <li><a href="">安全中心</a></li>
-                        <li><a href="">物流中心</a></li>
-                        <li><a href="">资金中心</a></li>
-                        <li><a href="">纠纷处理</a></li>
-                    </ul>
-                </li>
-                <li><a href=""><img src="images/person.jpg" alt=""></a></li>
-            </ul>
+        <div class="mainleft">
+            <form action="POST">
+                <table>
+                    <tr>
+                        <td class="left">名字：</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td class="left">姓氏：</td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td class="left">登录名：</td>
+                        <td><input type="text"><span>(可包含 a-z、0-9 和 下划线)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="left">密码：</td>
+                        <td><input type="password" name="" id=""><span>(至少包含6个字符)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="left">再次输入密码：</td>
+                        <td><input type="password" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td class="left">电子邮箱：</td>
+                        <td><input type="email" name="" id=""><span>(必须包含 @ 字符)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="left">性别：</td>
+                        <td>
+                            <input type="radio" name="sex" id="">
+                            <img src="images/male.png" alt="">男
+                            <input type="radio" name="sex" id="">
+                            <img src="images/female.png" alt="">女
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left">头像：</td>
+                        <td><input type="file" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td class="left">爱好：</td>
+                        <td>
+                            <input type="checkbox" name="hoby" id="" value="sport">运动
+                            <input type="checkbox" name="hoby" id="" value="chat">聊天
+                            <input type="checkbox" name="hoby" id="" value="game">玩游戏
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left">出生日期：</td>
+                        <td>
+                            <input type="text" value="yyyy" size="2"> 年
+                            <select name="month" id="">
+                                <option value="choose">[请选择月份]</option>
+                                <option value="choose">1月</option>
+                            </select>
+                            <input type="text" value="dd" size="1"> 日
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left"></td>
+                        <td>
+                            <a href=""><img src="images/submit.gif" alt=""></a>
+                            <a href=""><img src="images/reset.gif" alt=""></a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
         </div>
-        <div class="right">
-            <div class="top">
-            <h2>知识课堂>>商家帮助</h2>
-            </div>
-            <img src="images/reg_line.jpg" alt="">
-            <div class="main">
-            <p>享受贵美网免费网上交易乐趣，您需要了解贵美贝的网上安全交易流程和网上购物四步曲。</p>
-            <h3>网上安全交易流程如下：</h3>
-            <img src="images/buy_sep1.jpg" alt="">
-            <h3>客户交易演示四步曲：</h3>
-            <img src="images/buy_sep2.jpg" alt="">
+        <div class="mainright">
+            <div>
+                <p>
+                    <img src="images/picture.png" alt="">
+                    阅读贵美网服务条款
+                </p>
+                <textarea name="" id="" cols="30" rows="10">    欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用Gmgw.com网站的各种工具和服务。欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用Gmgw.com网站的各种工具和服务。    欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用Gmgw.com网站的各种工具和服务。欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用Gmgw.com网站的各种工具和服务。</textarea>
             </div>
         </div>
-        <!-- <iframe src="" frameborder="0" name="right" scrolling="no"></iframe> -->
     </div>
 
     <!-- footer栏 -->
