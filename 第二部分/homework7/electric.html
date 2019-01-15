@@ -77,72 +77,27 @@
 
         /* 主体部分 */
         .mainbody {
-            margin: 0px 10px 0px 25px;
-            height: 550px;
+            margin: auto;
+            width: 978px;
+            background: url("images/catlist_bg.gif") no-repeat;
         }
-
-        .mainbody img {
-            display: block;
+        .mainbody table {
+            text-align: center;
+            width: 970px;
+            padding-top: 40px;
+            font-size: 15px;
         }
-
-        /* 左侧部分 */
-        .left {
-            float: left;
-            position: relative;
-            display: inline-block;
-            height: 550px;
-            width: 190px;
-            background-image: url("images/customer.jpg");
-            background-repeat: no-repeat;
+        .mainbody table tr {
+            height: 50px;
         }
-
-        .left>ul {
-            position: absolute;
-            top: 200px;
-            left: 10px;
+        .mainbody table tr td {
+            border-top: 1px dashed #cccccc;
         }
-
-        .left li {
-            position: relative;
-            list-style: none;
+        .mainbody table p {
+            padding: 5px;
         }
-
-        .left a {
-            text-decoration: none;
-        }
-
-        .left a:visited {
-            color: #000000;
-        }
-
-        .left a:hover {
-            color: #FF8E31;
-        }
-        #dd {
-            margin: 5px;
-            padding: 10px 0px 10px 40px;
-        }
-        .left ul li {
-            display: block;
-        }
-
-        /* 右侧部分 */
-        .right {
-            float: left;
-            display: inline-block;
-            padding: 0px 20px;
-            height: 546px;
-            width: 740px;
-            border: 1px solid #DB969C;
-        }
-        h2 {
-            margin: 10px;
-        }
-        .right p {
-            margin: 10px;
-        }
-        h3 {
-            margin: 10px;
+        .table2 {
+            font-weight: bold;
         }
 
         /* footer栏 */
@@ -159,11 +114,6 @@
 
         footer p {
             margin: 5px;
-        }
-
-        iframe {
-            width: 790px;
-            height: 600px;
         }
     </style>
 </head>
@@ -213,7 +163,7 @@
         <nav class="nav2">
             <ul>
                 <li><a href="index.html">首&nbsp;&nbsp;页</a></li>
-                <li><a href="computer.html">家用电器</a></li>
+                <li><a href="shop.html">家用电器</a></li>
                 <li><a href="electric.html">手机数码</a></li>
                 <li><a href="">日用百货</a></li>
                 <li><a href="">书&nbsp;&nbsp;籍</a></li>
@@ -226,35 +176,80 @@
 
     <!-- 主体部分 -->
     <div class="mainbody">
-        <div class="left">
-            <ul>
-                <li><a href="help1.html"><img src="images/reg.jpg" alt=""></a></li>
-                <li><a href="help2.html"><img src="images/buy.jpg" alt=""></a></li>
-                <li><a href="help3.html" target="right"><img src="images/sale.jpg" alt=""></a>
-                    <ul id="dd">
-                        <li><a href="">安全中心</a></li>
-                        <li><a href="">物流中心</a></li>
-                        <li><a href="">资金中心</a></li>
-                        <li><a href="">纠纷处理</a></li>
-                    </ul>
-                </li>
-                <li><a href=""><img src="images/person.jpg" alt=""></a></li>
-            </ul>
-        </div>
-        <div class="right">
-            <div class="top">
-            <h2>知识课堂>>商家帮助</h2>
-            </div>
-            <img src="images/reg_line.jpg" alt="">
-            <div class="main">
-            <p>享受贵美网免费网上交易乐趣，您需要了解贵美贝的网上安全交易流程和网上购物四步曲。</p>
-            <h3>网上安全交易流程如下：</h3>
-            <img src="images/buy_sep1.jpg" alt="">
-            <h3>客户交易演示四步曲：</h3>
-            <img src="images/buy_sep2.jpg" alt="">
-            </div>
-        </div>
-        <!-- <iframe src="" frameborder="0" name="right" scrolling="no"></iframe> -->
+        <table>
+            <tr>
+                <th>
+                    <input type="checkbox" name="choose" id="">全选
+                </th>
+                <th>商品图片</th>
+                <th>商品名称/出售者/联系方式</th>
+                <th>价格</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="choose" id=""></td>
+                <td><img src="images/list1.jpg" alt=""></td>
+                <td>
+                    <p>杜比环绕，家庭影院必备，超真实享受</p>
+                    <p class="table2">出售者：ling112233</p>
+                    <p>
+                        <a href=""><img src="images/online_pic.gif" alt=""></a>
+                        <a href=""><img src="images/addfav.gif" alt="">收藏</a>
+                    </p>
+                </td>
+                <td>
+                    一口价：<br>
+                    2833.0
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="choose" id=""></td>
+                <td><img src="images/list2.jpg" alt=""></td>
+                <td>
+                    <p>杜比环绕，家庭影院必备，超真实享受</p>
+                    <p class="table2">出售者：ling112233</p>
+                    <p>
+                        <a href=""><img src="images/online_pic.gif" alt=""></a>
+                        <a href=""><img src="images/addfav.gif" alt="">收藏</a>
+                    </p>
+                </td>
+                <td>
+                    一口价：<br>
+                    2460.0
+                </td>                
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="choose" id=""></td>
+                <td><img src="images/list3.jpg" alt=""></td>
+                <td>
+                    <p>杜比环绕，家庭影院必备，超真实享受</p>
+                    <p class="table2">出售者：ling112233</p>
+                    <p>
+                        <a href=""><img src="images/online_pic.gif" alt=""></a>
+                        <a href=""><img src="images/addfav.gif" alt="">收藏</a>
+                    </p>
+                </td>
+                <td>
+                    一口价：<br>
+                    18880
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="choose" id=""></td>
+                <td><img src="images/list4.jpg" alt=""></td>
+                <td>
+                    <p>杜比环绕，家庭影院必备，超真实享受</p>
+                    <p class="table2">出售者：ling112233</p>
+                    <p>
+                        <a href=""><img src="images/online_pic.gif" alt=""></a>
+                        <a href=""><img src="images/addfav.gif" alt="">收藏</a>
+                    </p>
+                </td>
+                <td>
+                    一口价：<br>
+                    5889.0
+                </td>                
+            </tr>                                              
+        </table>
     </div>
 
     <!-- footer栏 -->
