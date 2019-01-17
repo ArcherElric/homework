@@ -86,21 +86,17 @@
     .mainleft {
         border-right: 1px solid #cccccc;
     }
+
     /* 中间左边部分 */
-    table {
-        margin: auto;
-    }
-    table tr td{
-        padding: 5px 0px;
-    }
-    .lasttd {
-        padding-left: 47px;
-    }
     .mainleft ul li {
         margin: 10px 0px 10px 50px;
         display: block;
         font-size: 13px;
     }
+    .lastone {
+        text-align: center;
+    }
+    
     /* 中间右侧部分 */
     .mainright>p {
         margin: 30px 0px 0px 30px;
@@ -224,7 +220,7 @@
         <div class="mainleft">
             <p><img src="images/title_login_2.png" alt=""></p>
             <form action="post">
-                <table>
+                <!-- <table>
                     <tr>
                         <td>会员名：</td>
                         <td>
@@ -245,7 +241,22 @@
                             <a href=""><img src="images/submit.gif" alt=""></a>
                         </td>
                     </tr>
-                </table>
+                </table> -->
+                <ul>
+                    <li>
+                        <span>用户名：</span>
+                        <input type="text" name="name">
+                        <span>(可包含 a-z、0-9 和下划线)</span>
+                    </li>
+                    <li>
+                        <span>密&nbsp;&nbsp;&nbsp;码：</span>
+                        <input type="password" name="password" id="">
+                        <span>(至少包含6个字符)</span>
+                    </li>
+                    <li class="lastone">
+                        <a href=""><img src="images/submit.gif" alt=""></a>
+                    </li>
+                </ul>
             </form>
             <ul>
                 <li>δ&nbsp;&nbsp;&nbsp;<a href="">什么是安全登录。</a></li>
