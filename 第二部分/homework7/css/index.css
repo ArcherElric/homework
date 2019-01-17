@@ -1,0 +1,222 @@
+/* 去除默认设置 */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 1024px;
+    margin: auto;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+}
+
+/* 导航栏 */
+#mainnav {
+    position: relative;
+}
+
+/* 顶部导航栏 */
+.nav1 ul {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.nav1 li {
+    padding: 0px 2px;
+    font-size: 16px;
+}
+
+.nav1 a img {
+    width: 20px;
+    height: 20px;
+}
+
+/* 欢迎及时间栏 */
+nav p {
+    position: absolute;
+    bottom: 35%;
+    right: 20%;
+    font-size: 14px;
+    color: #676664;
+}
+
+/* 主导航栏 */
+.nav2 ul {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+.nav2 ul li {
+    width: 79px;
+    text-align: center;
+}
+
+/* 主体部分 */
+#mainbody {
+    position: relative;
+    margin: auto;
+    width: 980px;
+    height: 650px;
+    background-image: url("../images/bg.gif");
+    background-repeat: no-repeat;
+}
+
+/* 主体左侧导航栏 */
+.leftnav {
+    float: left;
+    position: relative;
+    width: 200px;
+}
+
+.leftnav_body {
+    padding-top: 40px;
+}
+
+.leftnav_body div {
+    height: 147px;
+}
+
+.leftnav_body div h3 {
+    padding-left: 10px;
+    font-size: 18px;
+    color: #FF8E31;
+}
+
+.leftnav_body div ul {
+    padding-top: 5px;
+}
+
+.leftnav_body div ul li {
+    display: inline-block;
+    width: 63px;
+    font-size: 10px;
+}
+
+/* 中间部分 */
+/* 轮播图 */
+.centerbody {
+    position: relative;
+    float: left;
+    margin: 9px;
+    width: 530px;
+    height: 200px;
+    background-image: url("../images/ad-01.jpg");
+    background-repeat: no-repeat;
+}
+
+.centerbody ul {
+    position: absolute;
+    left: 15px;
+    bottom: 7px;
+}
+
+.centerbody ul li {
+    background-color: #cccccc;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+}
+
+.centerbody ul li a {
+    font-size: 14px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* 主要商品信息 */
+.mainSale {
+    margin: 20px;
+    margin-top: 25px;
+    width: 500px;
+    height: 420px;
+}
+
+.mainSale div {
+    width: 500px;
+    height: 130px;
+}
+
+.mainSale div>div {
+    padding: 2px;
+    float: left;
+    width: 160px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.mainSale div>div img {
+    border: 1px solid #cccccc;
+}
+
+/* 右侧部分 */
+.rightnav {
+    float: right;
+    width: 210px;
+}
+
+.rightnav img {
+    border: 1px solid #cccccc;
+}
+
+.rightnav ul {
+    padding-top: 180px;
+}
+
+.rightnav ul li {
+    height: 50px;
+    padding: 5px;
+}
+
+.rightnav ul li p {
+    /* 让文本水平居中 */
+    position: relative;
+    top: -50%;
+    display: inline-block;
+    font-size: 10px;
+}
+
+/* 两端图片 */
+#leftPg {
+    position: fixed;
+    top: 100px;
+    left: 50px;
+}
+#rightPg {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+}
+
+/* footer栏 */
+footer {
+    clear: both;
+    width: 1024px;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer ul {
+    margin: 10px 0px;
+}
+
+footer p {
+    margin: 5px;
+}
